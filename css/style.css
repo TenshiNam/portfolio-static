@@ -443,11 +443,67 @@ a.header-menu-item.active {
     }
 }
 
-/*********************************************
-    media screen : 1px ~ 600px
-*********************************************/
-@media screen and (max-width:600px){
-    .projects {
+        /*********************************************
+            media screen : 1px ~ 600px
+        *********************************************/
+        @media screen and (max-width:600px){
+            .projects {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*********************************************
+    iPhone 15 Optimization (max-width: 393px)
+*********************************************/
+@media screen and (max-width: 393px) {
+    /* 전체적인 섹션 패딩 축소 (화면을 더 넓게 쓰기 위함) */
+    section {
+        padding: 2rem 1rem;
+    }
+
+    /* 홈 섹션의 아바타 크기 조정 */
+    .home-avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* 타이틀 폰트 크기 최적화 (줄바꿈 방지) */
+    .home-title {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+
+    /* Major 카드 너비 조정 */
+    .major {
+        width: 100%; /* 고정 크기 30rem 대신 화면에 꽉 차게 */
+        padding: 1.5rem 1rem;
+    }
+
+    /* 기술(Skills) 섹션 간격 좁히기 */
+    .bar {
+        padding: 0.5rem;
+    }
+
+    /* 프로젝트 카테고리 버튼 너비 확장 */
+    .category {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    /* 위로 가기 버튼 위치 및 크기 조정 */
+    .arrow-up {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    /* 하단 연락처 아이콘 간격 조정 */
+    .contact-links {
+        gap: 1rem;
+        font-size: 1.5rem;
     }
 }
